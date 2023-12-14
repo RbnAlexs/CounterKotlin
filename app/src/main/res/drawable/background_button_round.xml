@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:bottomRightRadius="@dimen/radius"
+                android:topLeftRadius="@dimen/radius"/>
+            <gradient
+                android:startColor="#ff0000"
+                android:endColor="#fff"
+                android:type="radial"
+                android:gradientRadius="80%"
+                android:centerX="0.5"
+                />
+            <stroke
+                android:width="@dimen/button_stroke"
+                android:color="#fff"/>
+            <!--<solid android:color="#FF0000"/>-->
+
+            <size android:height="@dimen/button_size"
+                android:width="@dimen/button_size"/>
+            <padding
+                android:top="@dimen/common_padding_min"
+                android:bottom="@dimen/common_padding_min"
+                android:left="@dimen/common_padding_min"
+                android:right="@dimen/common_padding_min"
+                />
+        </shape>
+
+    </item>
+
+    <!-- STATES: ESTADOS DE UN RECURSO EN ANDROID -->
+    <item android:state_pressed="true">
+        <shape
+            android:shape="oval">
+
+            <gradient
+                android:startColor="#375B90"
+                android:endColor="#fff"
+                android:type="radial"
+                android:gradientRadius="80%"
+                android:centerX="0.5"
+
+                />
+            <stroke
+                android:width="@dimen/button_stroke"
+                android:color="#fff"/>
+            <!--<solid android:color="#FF0000"/>-->
+
+            <size android:height="@dimen/button_size"
+                android:width="@dimen/button_size"/>
+            <padding
+                android:top="@dimen/common_padding_min"
+                android:bottom="@dimen/common_padding_min"
+                android:left="@dimen/common_padding_min"
+                android:right="@dimen/common_padding_min"
+                />
+        </shape>
+
+    </item>
+
+</selector>
